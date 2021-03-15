@@ -1,56 +1,88 @@
-.todo {
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: #f6f5f7;
 	display: flex;
-	padding: 10px 15px;
-	background-color: #FFF;
-	border-bottom: 1px solid #DDD;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: 'Montserrat', sans-serif;
+	height: 100vh;
+	margin: -20px 0 50px;
 }
 
-.todo:nth-child(even) {
-	background-color: #EEE;
+form{
+	max-width: 30em;
+	margin: 4em auto;
+	position: relative;
+    background: #f4f4f4;
+    padding: 2em 3em;
+    overflow: hidden;
 }
-
-.todo:last-of-type {
-	border-bottom: 0;
+form h1{
+    font-family: "Raleway";
+    color:#F97300; 
 }
-
-.todo .id {
-	flex: 1 1 50px;
+form input[type=text]::placeholder{
+   font-family: "Raleway";
+   color:#666; 
 }
-
-.todo .content {
-	flex: 1 1 100%;
+form .data{
+    margin-top: 1em;
 }
-
-.todo.done .content {
-	text-decoration: line-through;
+form .data li{
+ background: #fff;
+ border-left: 4px solid #F97300;
+ padding: 1em;
+ margin: 1em auto;
+ color: #666;
+ font-family: "Raleway";
 }
-
-.todo-input {
-	display: block;
-	width: 100%;
-	padding: 10px 15px;
-	appearance: none;
-	border: none;
-	background-color: #F3F3F3;
-	margin-top: 15px;
-	font-size: 20px;
-	outline: none;
+form .data li i{
+    float: right;
+    color: #888;
+    cursor: pointer;
 }
-
-.todo-submit {
-	display: block;
-	width: 100%;
-	max-width: 200px;
-	appearance: none;
-	border: none;
-	outline: none;
-	background: none;
-
-	background-color: #FE4880;
-	color: #FFF;
-	margin: 15px auto;
-
-	padding: 10px 15px;
-	font-size: 18px;
-	font-weight: 700;
+form .input-group-text{
+    background: #F97300;
+    border-radius: 50%;
+    width: 5em;
+    height: 5em;
+    padding: 1em 23px;
+    color: #fff;
+    position: absolute;
+    right: 13px;
+    top: 68px;
+    cursor: pointer;
+}
+form .input-group-text i{
+    font-size: 2em;
+}
+form .form-control{
+	height: 3em;
+    font-family: "Raleway";
+}
+form .form-control:focus{
+	box-shadow: 0;
+}
+.container {
+	background-color: #fff;
+	border-radius: 10px;
+  	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+			0 10px 10px rgba(0,0,0,0.22);
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+	overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    width: 900px;
+    height: 600px;
 }
